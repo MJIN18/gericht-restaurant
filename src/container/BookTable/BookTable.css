@@ -1,0 +1,87 @@
+.app__bookTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__bookTable_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headtext__cormorant {
+  margin-bottom: 4rem;
+}
+
+.app__bookTable-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.app__bookTable-input input,
+select {
+  width: 360px;
+  height: 60px;
+  background: var(--color-black);
+  border: 1px solid var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 24px;
+  color: var(--color-white);
+  padding: 0 20px;
+}
+
+.app__bookTable-input input:hover,
+select:hover {
+  border: 1px solid var(--color-white);
+}
+
+.app__bookTable-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom__button {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__bookTable-input {
+    gap: 150px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__bookTable-input input,
+  select {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app__bookTable-input {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .app__bookTable-input input,
+  select {
+    width: 360px;
+  }
+  .app__bookTable-button {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__bookTable-input input,
+  select {
+    font-size: 16px;
+    width: 100%;
+  }
+}
